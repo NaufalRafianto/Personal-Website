@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-base text-white;
+  }
+}
+
+@layer components {
+  .links {
+    @apply relative font-paragraf text-lg tracking-wide text-white duration-500 after:absolute after:bottom-0 after:left-0 after:h-[2.5px] after:w-0 after:bg-white after:content-['']  hover:text-accent hover:after:w-full hover:after:bg-accent;
+  }
+
+  .animate-float {
+    animation: floating 3s ease-in-out infinite;
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
