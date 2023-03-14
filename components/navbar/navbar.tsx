@@ -9,7 +9,7 @@ export default function Navbar() {
           alt=""
           className="duration-1000 hover:translate-x-[100px] hover:translate-y-[-100px]"
         />
-        <h1 className=" font-logo text-5xl duration-500 ">mnr</h1>
+        <h1 className=" font-logo text-3xl duration-500 ">mnr</h1>
       </div>
       <nav className="flex space-x-10">
         <Path className="links" url="/" children="Home" />

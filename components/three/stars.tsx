@@ -30,7 +30,7 @@ function Stars(props: any) {
 
 export default function StarsCanvas() {
   return (
-    <div className="absolute inset-0 z-[-1] h-auto w-full">
+    <div className="absolute inset-0 z-[-1] h-[300vh] w-full">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <React.Suspense fallback={null}>
           <Stars />

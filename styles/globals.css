@@ -16,6 +16,10 @@
   .animate-float {
     animation: floating 3s ease-in-out infinite;
   }
+
+  .link-span {
+    @apply w-40 cursor-pointer text-red-400 hover:text-red-500;
+  }
 }
 
 @keyframes floating {
@@ -23,7 +27,7 @@
     transform: translatey(0px);
   }
   50% {
-    transform: translatey(-10px);
+    transform: translatey(-25px);
   }
   100% {
     transform: translatey(0px);
